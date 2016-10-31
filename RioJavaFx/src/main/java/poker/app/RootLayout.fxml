@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="850.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Game Type">
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" text="5 Card Joker Poker">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroupGameType" />
+                     </toggleGroup></RadioMenuItem>
+                  <RadioMenuItem mnemonicParsing="false" text="5 Card Willd Poker (Deuces WIld)" toggleGroup="$toggleGroupGameType" />
+                  <RadioMenuItem mnemonicParsing="false" text="5 Card Draw" toggleGroup="$toggleGroupGameType" />
+                  <RadioMenuItem mnemonicParsing="false" text="7 Card Draw" toggleGroup="$toggleGroupGameType" />
+                  <RadioMenuItem mnemonicParsing="false" text="Texas Hold 'em" toggleGroup="$toggleGroupGameType" />
+                  <RadioMenuItem mnemonicParsing="false" text="Omaha" toggleGroup="$toggleGroupGameType" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
